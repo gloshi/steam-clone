@@ -1,0 +1,74 @@
+.container {
+    background-color: #1D2024;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+.steam {
+    display: flex;
+    flex-direction: column;
+    padding-left: 200px;
+    .icon {
+        width: 250px;
+    }
+    .title {
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 15px;
+        font-size: 20px;
+    }
+    button {
+        background: linear-gradient(to right, #06bfff 50%, #2b74ff 100%);
+        border: none;
+        padding: 15px 15px;
+        border-radius: 3px;
+        color: white;
+        font-size: 17px;
+        cursor: pointer;
+        &:hover {
+            background: linear-gradient(to right, #057da5 50%, #1049b4 100%);
+
+        }
+    }
+}
+
+.online {
+    display: flex;
+    gap: 120px;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 20px;
+    .green{
+        width: 10px;
+        height: 10px;
+        top: 14px;
+        left: -7px;
+        position: absolute;
+        background-color: lightgreen;
+        border-radius: 50%;
+
+    }
+    .blue {
+        width: 10px;
+        height: 10px;
+        top: 14px;
+        left: -7px;
+        position: absolute;
+        background-color: lightblue;
+        border-radius: 50%;
+    }
+    .players {
+        padding: 10px 10px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    .inGame {
+        padding: 10px 10px;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+    }
+    
+}

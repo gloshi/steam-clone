@@ -1,0 +1,371 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  .mainTitle {
+    position: absolute;
+    top: 110px;
+    left: 280px;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #ffffff;
+  }
+}
+.game {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.mainImg {
+  position: relative;
+  iframe {
+    width: 854px;
+    height: 543px;
+  }
+}
+
+.right {
+  width: 453px;
+  height: 543px;
+  background: #172738;
+}
+.desc {
+  width: 700px;
+  height: 36px;
+}
+.prices {
+  position: absolute;
+  top: 225px;
+  left: 550px;
+  display: flex;
+  z-index: 21;
+  .blue {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #344654;
+    width: 192px;
+    height: 34px;
+    gap: 8px;
+    .price {
+      color: white;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+    }
+    .sale {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      text-decoration-line: line-through;
+
+      color: #757575;
+    }
+  }
+}
+.green {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 76px;
+  height: 34px;
+  background-color: #2a8002;
+  color: #52ff00;
+}
+.desc {
+  margin-left: 10px;
+
+  position: absolute;
+  top: 540px;
+  h4 {
+    padding-bottom: 10px;
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+  div {
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #e9e2e2;
+  }
+}
+.logosRecomend {
+  padding-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45px;
+  padding-bottom: 41px;
+}
+.like {
+  position: absolute;
+  left: 73px;
+  top: 35px;
+}
+
+.unlike {
+  position: absolute;
+  transform: rotate(0.5turn);
+  top: 40px;
+  left: 70px;
+}
+
+.Recommended {
+  h3 {
+    margin: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 29px;
+
+    color: #ffffff;
+  }
+  div {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    /* identical to box height */
+
+    color: #978787;
+  }
+}
+.textRec {
+  padding-left: 23px;
+  padding-right: 30px;
+  .date {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    /* identical to box height */
+
+    color: #978787;
+    padding-bottom: 7px;
+  }
+  .text {
+    font-weight: 425;
+    font-size: 13px;
+    line-height: 20px;
+
+    color: #ffffff;
+  }
+  .readMore {
+    padding-top: 14px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+
+    color: #978787;
+    padding-bottom: 42px;
+  }
+  .stats {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 15px;
+
+    color: #978787;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+  }
+}
+.middle {
+
+  margin-top: 40px;
+  gap: 20px;
+  height: 500px;
+  
+}
+.categoriesAndBtn {
+  display: flex;
+  flex-direction: column;
+  gap: 78px;
+}
+.addToCart {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: none;
+  margin-top: 80px;
+  margin-left: 0px;
+  background: #2a8002;
+  div {
+    font-weight: 800;
+    font-size: 30px;
+    line-height: 37px;
+    /* identical to box height */
+
+    color: #52ff00;
+  }
+  p {
+    font-weight: 500;
+    font-size: 11px;
+    line-height: 13px;
+
+    color: #52ff00;
+  }
+}
+
+.fest {
+  width: 1437px;
+  height: 181px;
+
+  background: linear-gradient(175.64deg, #f9a75b 7.88%, #8e76ee 118.01%);
+  background-blend-mode: screen, normal;
+}
+.fest {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 120px;
+}
+.titleFest {
+  width: 200px;
+
+  .next {
+    padding-left: 10px;
+    width: 200px;
+    margin-left: 50px;
+    background-color: black;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 195.9%;
+    /* or 51px */
+
+    letter-spacing: 1.56em;
+
+    color: #ffffff;
+  }
+  .titleFestDiv {
+    padding-left: 10px;
+    background-color: black;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 195.9%;
+    /* or 51px */
+
+    letter-spacing: 1.56em;
+
+    color: #ffffff;
+  }
+}
+.icon {
+  position: absolute;
+}
+.festDate {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 195.9%;
+  /* identical to box height, or 47px */
+
+  color: #000000;
+}
+.celebration {
+  width: 433px;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 90.9%;
+  /* or 36px */
+
+  letter-spacing: 0.045em;
+
+  color: #000000;
+}
+.featured {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.info {
+  position: relative;
+  display: flex;
+  justify-content: center;
+    gap: 40px;
+  padding-right: 100px;
+  .leftGame {
+    background-color: #0e1924;
+    width: 854px;
+    height: 243px;
+  }
+}
+.leftGame {
+    position: relative;
+   display: flex;
+        justify-content: center;
+   flex-direction: column;
+   gap: 10px;
+
+    .titleGame {
+        padding-left: 20px;
+        font-size: 22px;
+        color: #fff;
+    }
+    .descGame {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 17px;
+        color: #fff;
+    }
+    .window {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+.categories {
+    display: flex;
+
+    flex-wrap: wrap;
+    gap: 6px;
+    div {
+      padding: 6px 21px;
+      background: #0e1924;
+      border-radius: 73px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      /* identical to box height */
+
+      color: #5f8fc0;
+    }
+  }
+  .genres {
+    h6{
+        margin: 0;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 29px;
+        color: #ffffff;
+        padding-bottom: 10px;
+    }
+  }
+  .unlike img{
+    transform: rotate(0.5turn);
+  }
+  .RECOMMENDED {
+    display: flex;
+    gap: 40px;
+  }

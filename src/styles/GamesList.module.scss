@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+.gameGrid {
+    display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 35px;
+grid-row-gap: 65px;
+}
+
+.game {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 478px;
+    border-radius: 7px;
+
+    img {
+        border-radius: 7px;
+        width: 100%;
+        height: 320px;
+    }
+    .title {
+        padding-left: 20px;
+        position: absolute;
+        top: 250px;
+        left: 20px;
+        color: #172738;
+        font-size: 20px;
+        z-index: 1001;
+
+    }
+    .categories {
+        position: absolute;
+        top: 280px;
+        display: flex;
+        padding-left: 20px;
+        padding-right: 20px;
+        gap: 12px;
+        z-index: 1001;
+        div {
+
+            background-color: #172738;
+            padding: 5px 5px;
+            border-radius: 8px;
+            color: white;
+        }
+    }
+
+        
+        
+        .sale{
+            border-radius: 5px;
+            padding: 5px 5px;
+            background-color: rgb(0, 236, 0);
+        }
+        .saleBox {
+            padding-left: 5px;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            background-color: rgb(109, 92, 255);
+            border-radius: 7px;
+            border: 1px solid black;
+            .old {
+                text-decoration: line-through;
+                color: rgb(250, 53, 53);
+            }
+            .current {
+                color: rgb(0, 236, 0);
+            }
+        }
+    
+    .btnRemove {
+        position: absolute;
+        top: 332px;
+        border-radius: 7px;
+        right: 0;
+        padding: 10px 10px;
+        display: flex;
+        justify-content: center;
+        background-color: rgb(127, 178, 255);
+        cursor: pointer;
+    }
+}
+.box {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+.rating {
+    padding: 6px 6px 6px 6px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 7px;
+    border-radius: 7px;
+    background-color: rgb(101, 113, 202);
+
+    .params {
+        display: flex;
+    gap: 4px;
+    flex-direction: column;
+    span{
+        font-size: 20px;
+        color: rgb(8, 255, 8);
+
+    }
+        div{
+            color: rgb(8, 255, 8);
+        }
+    }
+}
+.price {
+    display: flex;
+    flex-direction: column-reverse;
+    position: absolute;
+    top: 280px;
+    z-index: 11111;
+    right: 20px;
+    color: #172738;;
+    font-size: 22px;
+    .old {
+        font-size: 10px;
+    }
+}
+.imgBox {
+    position: absolute;
+    top: 240px;
+    width: 100%;
+    height: 80px;
+    opacity: 0.6;
+    background: rgb(201, 215, 245);
+    z-index: 9;
+    border-radius: 7px;
+}

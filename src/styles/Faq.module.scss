@@ -1,0 +1,54 @@
+.container {
+    padding-top: 100px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.Box {
+    width: 774px;
+    height: 60px;
+    padding-left: 40px;
+    background-color: #172738;
+    border: 0.7px solid #5b00ee;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    /* identical to box height, or 100% */
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #ffffff;
+}
+
+.Box img {
+    cursor: pointer;
+    padding-right: 19px;
+    color: white;
+
+}
+
+.info h1 {
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+
+
+    color: #ffffff;
+}
+
+.info {
+    padding: 20px 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 774px;
+    height: 119px;
+    color: white;
+    background: rgb(127, 178, 255);
+}

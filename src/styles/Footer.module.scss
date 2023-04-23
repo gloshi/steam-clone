@@ -1,0 +1,103 @@
+.container {
+    padding-top: 21px;
+    width: 100%;
+    margin-top: 0 auto;
+    height: 277px;
+    background: #171a21;
+    color:  #c5c3c0;
+    display: flex;
+}
+
+.left {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-left: 246px;
+}
+
+.left h1 {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 30px;
+    /* identical to box height, or 188% */
+
+
+    color: #FFFFFF;
+}
+
+.left img {
+    top: 50px;
+    cursor: pointer;
+    right: 135px;
+    position: absolute;
+    width: 35px;
+    height: 20px;
+}
+
+.left input {
+
+    font-size: 20px;
+    width: 432px;
+    border: none;
+    outline: none;
+    background-color: #272564;
+    color: white;
+    border-bottom: 1px solid #EFEFEF;
+    transform: rotate(-0.27deg);
+}
+
+.left input::placeholder {
+    font-size: 20px;
+    color: white;
+}
+
+.left span {
+    padding-top: 20px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.7
+}
+
+.left div {
+    padding-top: 70px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 30px;
+    /* or 188% */
+
+
+    color: #FFFFFF;
+
+    opacity: 0.7
+}
+.right {
+    padding-left: 270px;
+}
+.policy {
+    display: flex;
+    gap: 43px;
+}
+.policy span {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    padding-bottom: 70px;
+    cursor: pointer;
+}
+.icons {
+    display: flex;
+    padding-left: 210px;
+    gap: 43px;
+    cursor: pointer;
+}
