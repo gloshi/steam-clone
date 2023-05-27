@@ -4,11 +4,10 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <div className={styles.left}>
           <h1>Newsletter</h1>
           <input type="text" placeholder='email...'  />
-          <img src="/img/arrow.svg" alt="" />
           <span>Sign up to our newsletter for special things and receive 10% off your next order.</span>
           <div>© 2023 gloshi</div>
       </div>
@@ -25,7 +24,7 @@ const Footer = () => {
           <img src="/img/bank.svg" alt="" />
         </div>
       </div>
-    </div>
+    </footer>
   )
 }
 

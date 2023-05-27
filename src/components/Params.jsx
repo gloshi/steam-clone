@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import {AiOutlineCloseCircle} from 'react-icons/ai'
 import '../styles/Params.scss'
@@ -21,6 +21,7 @@ const Params = () => {
               ))
             }
         </div>
+
         <div className='search'>
         <div className="search_box">
 		  <input value={search} onChange={(e)=>dispatch(setSearchValue(e.target.value))} type="text" className="input_search" placeholder="Поиск..." />

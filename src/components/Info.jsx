@@ -29,8 +29,7 @@ const Info = () => {
       </div>
       <div className={styles.video}>
         <ReactPlayer
-          width={854}
-          height={543}
+         
           playing={true}
           muted={true}
           url={

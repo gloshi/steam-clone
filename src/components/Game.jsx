@@ -35,9 +35,9 @@ const Game = ({ game }) => {
         </div>
         <div className={styles.imgBox}></div>
       </Link>
-      <div  onClick={(e) => onClickToCart(e)} className={styles.btnRemove}>
+      <button  onClick={(e) => onClickToCart(e)} className={styles.btnRemove}>
         {isItemInCart ? "Убрать из корзины" : "Добавить в корзину"}
-      </div>
+      </button>
     </div>
   );
 };

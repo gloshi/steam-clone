@@ -12,7 +12,7 @@ const GamesList = () => {
 
 
   return (
-    <div className={styles.container}>
+    <main className={styles.container}>
       <div className={styles.gameGrid}>
         {isLoad ? (
           <>
@@ -39,7 +39,7 @@ const GamesList = () => {
             .map((game) => <Game game={game} key={game.id} />)
         )}
       </div>
-    </div>
+    </main>
   );
 };
 

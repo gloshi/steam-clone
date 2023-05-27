@@ -4,11 +4,19 @@
     align-items: center;
     justify-content: center;
     gap: 200px;
+    height: 100vh;
+    @media only screen and (max-width: 1630px){
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
 }
 .steam {
     display: flex;
     flex-direction: column;
     padding-left: 200px;
+    @media only screen and (max-width: 780px){
+        padding-left: 0px;
+    }
     .icon {
         width: 250px;
     }

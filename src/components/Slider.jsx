@@ -9,14 +9,16 @@ import {
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "../styles/Slider.scss";
+import { useResize } from "./useResize";
 
 const SliderImg = ({img}) => {
+  const size = useResize();
   return (
     <CarouselProvider
       naturalSlideWidth={500}
       naturalSlideHeight={500}
       totalSlides={7}
-      visibleSlides={3}
+      visibleSlides={size.width < 1330? 2: 3}
     >
       <Slider  className="slider">
         <Slide  index={0}><img src={img} alt="game" /></Slide>

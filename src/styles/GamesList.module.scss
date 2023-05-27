@@ -10,6 +10,18 @@ grid-template-columns: repeat(3, 1fr);
 grid-template-rows: repeat(2, 1fr);
 grid-column-gap: 35px;
 grid-row-gap: 65px;
+@media only screen and (max-width: 1600px){
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 65px;
+}
+@media only screen and (max-width: 1000px){
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 35px;
+    grid-row-gap: 65px;
+}
 }
 
 .game {
@@ -19,7 +31,12 @@ grid-row-gap: 65px;
     gap: 10px;
     width: 478px;
     border-radius: 7px;
-
+    @media only screen and (max-width: 500px){
+        width: 400px;
+    }
+    @media only screen and (max-width: 391px){
+        width: 380px;
+    }
     img {
         border-radius: 7px;
         width: 100%;
@@ -43,6 +60,10 @@ grid-row-gap: 65px;
         padding-right: 20px;
         gap: 12px;
         z-index: 1001;
+        @media only screen and (max-width: 500px){
+            gap: 3px;
+            padding-left: 3px;
+        }
         div {
 
             background-color: #172738;
@@ -86,6 +107,8 @@ grid-row-gap: 65px;
         justify-content: center;
         background-color: rgb(127, 178, 255);
         cursor: pointer;
+        outline: none;
+        border: none;
     }
 }
 .box {
@@ -126,6 +149,9 @@ grid-row-gap: 65px;
     right: 20px;
     color: #172738;;
     font-size: 22px;
+    @media only screen and (max-width: 500px){
+        font-size: 17px;
+    }
     .old {
         font-size: 10px;
     }

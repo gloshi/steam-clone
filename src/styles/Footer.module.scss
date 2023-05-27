@@ -2,10 +2,14 @@
     padding-top: 21px;
     width: 100%;
     margin-top: 0 auto;
-    height: 277px;
+
     background: #171a21;
     color:  #c5c3c0;
     display: flex;
+    justify-content: space-between;
+    @media only screen and (max-width: 1600px) {
+        flex-direction: column;
+    }
 }
 
 .left {
@@ -13,6 +17,15 @@
     display: flex;
     flex-direction: column;
     padding-left: 246px;
+    @media only screen and (max-width: 1600px) {
+        padding-left: 46px;
+    }
+    @media only screen and (max-width: 1100px) {
+        padding-left: 30px;
+    }
+    @media only screen and (max-width: 391px){
+        padding: 0px;
+    }
 }
 
 .left h1 {
@@ -44,6 +57,10 @@
     color: white;
     border-bottom: 1px solid #EFEFEF;
     transform: rotate(-0.27deg);
+    @media only screen and (max-width: 490px) {
+        width: 232px;
+        
+    }
 }
 
 .left input::placeholder {
@@ -61,7 +78,10 @@
 
     color: #FFFFFF;
 
-    opacity: 0.7
+    opacity: 0.7;
+    @media only screen and (max-width: 391px){
+        font-size: 12px;
+    }
 }
 
 .left div {
@@ -77,11 +97,21 @@
     opacity: 0.7
 }
 .right {
-    padding-left: 270px;
+    padding-right: 270px;
+    @media only screen and (max-width: 1600px) {
+        padding-right: 76px;
+    }
+    @media only screen and (max-width: 1100px) {
+        padding-left: 30;
+        
+    }
 }
 .policy {
     display: flex;
     gap: 43px;
+    @media only screen and (max-width: 391px){
+        gap: 5px;
+    }
 }
 .policy span {
     font-weight: 300;
@@ -94,10 +124,21 @@
     color: #FFFFFF;
     padding-bottom: 70px;
     cursor: pointer;
+    @media only screen and (max-width: 1100px) {
+        padding-left: 30px;
+        
+    }
 }
 .icons {
     display: flex;
     padding-left: 210px;
     gap: 43px;
     cursor: pointer;
+    @media only screen and (max-width: 1600px) {
+        padding-left: 46px;
+    }
+    @media only screen and (max-width: 1100px) {
+        padding-left: 30px;
+    }
+    
 }

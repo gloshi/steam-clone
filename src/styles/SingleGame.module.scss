@@ -3,10 +3,13 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  position: relative;
   .mainTitle {
     position: absolute;
-    top: 110px;
-    left: 280px;
+    top: 0;
+    left: 500px;
+    padding: 0;
+    margin: 0;
     font-weight: 700;
     font-size: 24px;
     line-height: 29px;
@@ -19,6 +22,15 @@
   display: flex;
   justify-content: center;
   gap: 40px;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 1500px) {
+    gap: 0px;
+  }
+  @media only screen and (max-width: 1190px) {
+    flex-direction: column;
+    align-items: center;
+    gap:  50px;
+  }
 }
 .mainImg {
   position: relative;
@@ -26,6 +38,13 @@
     width: 854px;
     height: 543px;
   }
+  @media only screen and (max-width: 1500px) {
+    iframe {
+      width: 654px;
+    height: 543px;
+    }
+   
+}
 }
 
 .right {
@@ -43,6 +62,9 @@
   left: 550px;
   display: flex;
   z-index: 21;
+  @media only screen and (max-width: 1310px) {
+    left: 200px;
+}
   .blue {
     display: flex;
     align-items: center;
@@ -301,10 +323,22 @@
   justify-content: center;
     gap: 40px;
   padding-right: 100px;
+  margin-bottom: 50px;
+  @media only screen and (max-width: 1310px) {
+    gap: 20px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+  }
+  @media only screen and (max-width: 900px) {
+    flex-direction: column;
+}
   .leftGame {
     background-color: #0e1924;
     width: 854px;
     height: 243px;
+    @media only screen and (max-width: 1310px) {
+      width: 554px;
+  }
   }
 }
 .leftGame {
@@ -313,7 +347,7 @@
         justify-content: center;
    flex-direction: column;
    gap: 10px;
-
+  
     .titleGame {
         padding-left: 20px;
         font-size: 22px;
@@ -334,6 +368,7 @@
             height: 30px;
         }
     }
+   
 }
 .categories {
     display: flex;

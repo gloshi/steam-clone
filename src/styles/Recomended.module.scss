@@ -9,11 +9,26 @@
         height: 510px;
         border-radius: 7px;
         cursor: pointer;
+       
     }
     .title{
         font-size: 22px;
         text-align: center;
         color: white;
         padding-top: 15px;
+    }
+    @media only screen and (max-width: 1620px) {
+        img {
+            width: 300px;
+            height: 300px;
+        }
+        
+    }
+    @media only screen and (max-width: 1620px) {
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        
     }
 }

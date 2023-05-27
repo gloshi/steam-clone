@@ -9,10 +9,26 @@
     height: calc(100% - 20px);
     cursor: pointer;
     }
+    @media only screen and (max-width: 1310px) {
+      width: calc(100% - 70px);
+      height: calc(100% - 70px);
+    }
+    @media only screen and (max-width: 1010px) {
+      width: calc(100% - 70px);
+      height: calc(100% - 70px);
+    }
   }
   .slider {
     width: 1300px;
     height: 340px;
+    @media only screen and (max-width: 1310px) {
+      width: 700px;
+      height: 340px;
+    }
+    @media only screen and (max-width: 1010px) {
+      width: 500px;
+      height: 340px;
+    }
   }
 .none {
     display: none;

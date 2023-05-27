@@ -16,7 +16,7 @@ const NavBar = () => {
   ];
 
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <div className={styles.leftBar}>
         <Link to={ROUTE.HOME}>
         <img src="/img/logo.png" alt="logo" />
@@ -35,13 +35,13 @@ const NavBar = () => {
         </div>
       </div>
       <div className={styles.rightBar}>
-          <div className={styles.download}><ImDownload />Скачать приложение</div>
+          <div className={styles.download}><ImDownload /> <span>Скачать приложение</span> </div>
           <div className={styles.login}>Войти</div>
           <div className={styles.language}><BiWorld size={30} />Язык</div>
           <div className={styles.dark}>{true? <CiDark size={30} /> : <MdDarkMode size={30}/>}</div>
       </div>
       
-    </div>
+    </header>
   );
 };
 

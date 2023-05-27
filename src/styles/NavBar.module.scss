@@ -5,11 +5,17 @@
     display: flex;
     
     justify-content: space-between;
+    @media only screen and (max-width: 1600px){
+        padding: 0px 0px 0px 00px;
+    }
 }
 .leftBar {
     display: flex;
     align-items: center;
     gap: 17px;
+    @media only screen and (max-width: 1600px){
+        gap: 5px;
+    }
     div {
         cursor: pointer;
 
@@ -21,6 +27,15 @@
         width: 3rem;
         height: 3rem;
     }
+    @media only screen and (max-width: 500px) {
+        img {
+            width: 70px;
+            height: 70px;
+        }
+        h1 {
+            font-size: 12px;
+        }
+    }
     
 }
 
@@ -31,11 +46,21 @@
         gap: 12px;
         cursor: pointer;
     }
-
+    @media only screen and (max-width: 500px) {
+      width: 150px;
+      overflow: auto;
+    }
 }
 .rightBar {
     display: flex;
     gap: 10px;
+    @media only screen and (max-width: 1000px){
+        gap: 3px;
+    }
+    @media only screen and (max-width: 730px){
+        flex-wrap: wrap;
+        padding-left: 20px;
+    }
 }
 .download {
     display: flex;
@@ -43,13 +68,18 @@
     justify-content: center;
     cursor: pointer;
     gap: 5px;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
+    
     background-color: rgb(44, 207, 44);
     height: 26px;
     border-radius: 10px;
     text-align: center;
     color: white;
+    @media only screen and (max-width: 1000px){
+        gap: 0px;
+    }
+    span {
+        font-size: 12px;
+    }
 } 
 .login {
     display: flex;
